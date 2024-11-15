@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Pasien Klinik Sehat</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-lg border-0 rounded-lg">
+                    <div class="card-header text-center bg-primary text-white rounded-top">
+                        <h2 class="mb-1">Formulir Pendaftaran Pasien</h2>
+                        <p class="small mb-0">Klinik Sehat - Jaga Kesehatan Anda</p>
+                    </div>
+                    <div class="card-body p-4">
+                        <form action="submit_kliniksehat.html" method="post" id="formPasien">
+                            <div class="form-group">
+                                <label for="nama_pasien" class="font-weight-bold">Nama Pasien:</label>
+                                <input type="text" class="form-control form-control-lg" id="nama_pasien" name="nama_pasien" placeholder="Masukkan nama lengkap Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="usia" class="font-weight-bold">Usia:</label>
+                                <input type="number" class="form-control form-control-lg" id="usia" name="usia" min="1" placeholder="Masukkan usia Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Jenis Kelamin:</label>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="laki-laki" name="jenis_kelamin" value="laki-laki" checked>
+                                    <label class="form-check-label" for="laki-laki">Laki-laki</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="perempuan" name="jenis_kelamin" value="perempuan">
+                                    <label class="form-check-label" for="perempuan">Perempuan</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="keluhan" class="font-weight-bold">Keluhan:</label>
+                                <textarea class="form-control form-control-lg" id="keluhan" name="keluhan" rows="4" placeholder="Deskripsikan keluhan Anda"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="dokter" class="font-weight-bold">Pilih Dokter:</label>
+                                <select class="form-control form-control-lg" id="dokter" name="dokter">
+                                    <option value="dokter_umum">Dokter Umum</option>
+                                    <option value="dokter_gigi">Dokter Gigi</option>
+                                    <option value="dokter_spesialis">Dokter Spesialis</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Pilihan Tambahan:</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="rekam_medis" name="tambahan[]" value="rekam_medis">
+                                    <label class="form-check-label" for="rekam_medis">Cetak Rekam Medis</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="konsultasi" name="tambahan[]" value="konsultasi">
+                                    <label class="form-check-label" for="konsultasi">Konsultasi Lanjutan</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block mt-4">Kirim</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

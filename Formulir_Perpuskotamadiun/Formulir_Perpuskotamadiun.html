@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Perpustakaan Kota Madiun</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card shadow-lg p-5 border-0 rounded-lg" style="max-width: 500px; width: 100%;">
+            <h2 class="text-center mb-4">Formulir Pendaftaran Anggota</h2>
+            <form action="submit_perpuskotamadiun.html" method="post" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" class="form-control" placeholder="Masukkan Nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="nomor_anggota">Nomor Anggota:</label>
+                    <input type="text" id="nomor_anggota" name="nomor_anggota" class="form-control" placeholder="Masukkan Nomor Anggota" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Buat Password" required>
+                    <small class="form-text text-muted">Minimal 8 karakter.</small>
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat:</label>
+                    <textarea id="alamat" name="alamat" rows="4" class="form-control" placeholder="Masukkan Alamat Lengkap Anda"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="kategori_buku">Kategori Buku Favorit:</label>
+                    <select id="kategori_buku" name="kategori_buku" class="form-control">
+                        <option value="fiksi">Fiksi</option>
+                        <option value="nonfiksi">Nonfiksi</option>
+                        <option value="sains">Sains</option>
+                        <option value="teknologi">Teknologi</option>
+                    </select>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="premium" name="keanggotaan" value="premium">
+                    <label class="form-check-label" for="premium">Ingin menjadi anggota premium</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Daftar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

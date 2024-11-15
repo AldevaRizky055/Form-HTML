@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Data Diri</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card shadow-lg border-0 rounded-lg" style="max-width: 500px; width: 100%;">
+            <div class="card-header bg-primary text-white text-center rounded-top">
+                <h1 class="h3 mb-0">Formulir Data Diri</h1>
+                <p class="small mb-0">Isi data diri Anda dengan benar</p>
+            </div>
+            <div class="card-body p-4">
+                <form action="formulir.html" method="get">
+                    <div class="form-group">
+                        <label for="nama">Nama:</label>
+                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan Nama Kamu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin:</label>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="laki-laki" name="jenis_kelamin" value="laki-laki" checked>
+                            <label class="form-check-label" for="laki-laki">Laki-laki</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="perempuan" name="jenis_kelamin" value="perempuan">
+                            <label class="form-check-label" for="perempuan">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Hobi:</label>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="hobi_baca" name="hobi_baca">
+                            <label class="form-check-label" for="hobi_baca">Membaca Buku</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="hobi_nulis" name="hobi_nulis" checked>
+                            <label class="form-check-label" for="hobi_nulis">Menulis</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="hobi_mancing" name="hobi_mancing">
+                            <label class="form-check-label" for="hobi_mancing">Memancing</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="asal_kota">Asal Kota:</label>
+                        <select class="form-control" id="asal_kota" name="asal_kota">
+                            <option value="Kota Jakarta">Jakarta</option>
+                            <option value="Bandung">Bandung</option>
+                            <option value="Kota Semarang" selected>Semarang</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="komentar">Komentar Anda:</label>
+                        <textarea class="form-control" id="komentar" name="komentar" rows="4" placeholder="Silahkan katakan isi hati anda"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block mt-4">Mulai Proses!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
