@@ -5,13 +5,13 @@ Proyek ini berisi beberapa file HTML yang berlokasi dalam folder terpisah. Setia
 ## Daftar Formulir
 
 1. **Formulir Umum**
-   - Lokasi: [formulir/formulir.html](./formulir/formulir.html)
+   - Lokasi: [Formulir/Formulir.html](./Formulir/Formulir.html)
 
 2. **Formulir Klinik Sehat**
-   - Lokasi: [formulir_kliniksehat/formulirsehat.html](./formulir_kliniksehat/formulirsehat.html)
+   - Lokasi: [Formulir_kliniksehat/Formulirsehat.html](./Formulir_Kliniksehat/Formulirsehat.html)
 
 3. **Formulir Perpustakaan Kota Madiun**
-   - Lokasi: [formulir_perpuskotamadiun/Formulir_Perpuskotamadiun.html](./formulir_perpuskotamadiun/Formulir_Perpuskotamadiun.html)
+   - Lokasi: [Formulir_Perpuskotamadiun/Formulir_Perpuskotamadiun.html](./Formulir_Perpuskotamadiun/Formulir_Perpuskotamadiun.html)
 
 ## Deskripsi
 
