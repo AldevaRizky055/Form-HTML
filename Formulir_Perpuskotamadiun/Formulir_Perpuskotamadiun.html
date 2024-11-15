@@ -3,47 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulir Perpustakaan Kota Madiun</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Formulir Pendaftaran Anggota</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 <body>
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="card shadow-lg p-5 border-0 rounded-lg" style="max-width: 500px; width: 100%;">
-            <h2 class="text-center mb-4">Formulir Pendaftaran Anggota</h2>
-            <form action="submit_perpuskotamadiun.html" method="post" onsubmit="return validateForm()">
-                <div class="form-group">
-                    <label for="nama">Nama:</label>
-                    <input type="text" id="nama" name="nama" class="form-control" placeholder="Masukkan Nama Anda" required>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-lg border-0 rounded-lg">
+                    <div class="card-header text-center bg-primary text-white rounded-top">
+                        <h2 class="mb-1">Formulir Pendaftaran Anggota</h2>
+                        <p class="small mb-0">Klinik Sehat - Jaga Kesehatan Anda</p>
+                    </div>
+                    <div class="card-body p-4">
+                        <form action="submit_perpuskotamadiun.html" method="post" id="formAnggota">
+                            <div class="form-group">
+                                <label for="nama" class="font-weight-bold">Nama:</label>
+                                <input type="text" class="form-control form-control-lg" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nomor_anggota" class="font-weight-bold">Nomor Anggota:</label>
+                                <input type="text" class="form-control form-control-lg" id="nomor_anggota" name="nomor_anggota" placeholder="Masukkan nomor anggota" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="font-weight-bold">Password:</label>
+                                <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Buat password" required>
+                                <small class="form-text text-muted">Minimal 8 karakter</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="alamat" class="font-weight-bold">Alamat:</label>
+                                <textarea class="form-control form-control-lg" id="alamat" name="alamat" rows="4" placeholder="Masukkan alamat lengkap Anda"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="kategori_buku" class="font-weight-bold">Kategori Buku Favorit:</label>
+                                <select class="form-control form-control-lg" id="kategori_buku" name="kategori_buku">
+                                    <option value="fiksi">Fiksi</option>
+                                    <option value="nonfiksi">Nonfiksi</option>
+                                    <option value="sains">Sains</option>
+                                    <option value="teknologi">Teknologi</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Ingin menjadi anggota premium?</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="premium" name="premium">
+                                    <label class="form-check-label" for="premium">Ya</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block mt-4">Daftar</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="nomor_anggota">Nomor Anggota:</label>
-                    <input type="text" id="nomor_anggota" name="nomor_anggota" class="form-control" placeholder="Masukkan Nomor Anggota" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" class="form-control" placeholder="Buat Password" required>
-                    <small class="form-text text-muted">Minimal 8 karakter.</small>
-                </div>
-                <div class="form-group">
-                    <label for="alamat">Alamat:</label>
-                    <textarea id="alamat" name="alamat" rows="4" class="form-control" placeholder="Masukkan Alamat Lengkap Anda"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="kategori_buku">Kategori Buku Favorit:</label>
-                    <select id="kategori_buku" name="kategori_buku" class="form-control">
-                        <option value="fiksi">Fiksi</option>
-                        <option value="nonfiksi">Nonfiksi</option>
-                        <option value="sains">Sains</option>
-                        <option value="teknologi">Teknologi</option>
-                    </select>
-                </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="premium" name="keanggotaan" value="premium">
-                    <label class="form-check-label" for="premium">Ingin menjadi anggota premium</label>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Daftar</button>
-            </form>
+            </div>
         </div>
     </div>
 

@@ -5,6 +5,9 @@ body {
 .card-header {
     font-size: 1.2rem;
     font-weight: bold;
+    padding: 1rem;
+    z-index: 1;
+    position: relative;
 }
 
 .form-check-input {
@@ -24,4 +27,50 @@ body {
 .btn-primary:hover {
     background-color: #0056b3;
     border-color: #004085;
+}
+
+.container {
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .card {
+        margin: 0 1rem;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+
+    .card-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-header h1 {
+        font-size: 1.2rem;
+    }
+
+    .card-header p {
+        font-size: 0.85rem;
+    }
+
+    .form-control {
+        font-size: 0.85rem;
+    }
+
+    .btn-primary {
+        padding: 0.6rem 0.9rem;
+        font-size: 0.9rem;
+    }
 }
